@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<title>Positive covid results</title>
+	<style>
+		div.border {border-color: green; width:500px; padding : 20px; border-style: solid;background-color: white;}
+	</style>
+</head>
+        <body style = "background-color: lightgoldenrodyellow">	
+    <body>		
+        <form action="site.php" method="post" enctype="multipart/form-data">
+			<div align ="center"> 				<!--aligns the whole frame to middle-->
+				<img src="covidBanner.jpg" alt="Covid Banner" width="600" height="300">
+               <div align ="center" class = "border"> <!--aligns all inside of border-->
+				   
+    <b> Please enter your details below and upload the result of your antigen test	</b>
+		<br>
+		<br>
+                   
+ <!--    Name-->
+        <label for="name">Name:</label>
+        <input type ="text" name ="name" id="name"/>
+		<br>
+		<br>
+                   
+<!--       userName-->
+        <label for="username">Create a username:</label>
+        <input type ="text" name ="username" id="username"/>
+		<br>
+		<br>
+
+<!--       Year input-->
+
+        <label for ="DOB">Date of Birth: </label>
+        <input type="text" name="DOB" id="DOB" pattern="\d{4}-\d{2}-\d{2}"min="1930-01-01" max="2022-02-24"  required/>
+		<br>
+		<br>
+                   
+<!--        password-->
+        <label for ="passwordField">Create a Password: </label>
+        <input type="password" name="password" id="password" required/>
+		<br>
+        <br>
+                   
+                   
+<!--       PhoneNumber-->
+        <label for="phoneNo">Enter your phone number:</label>
+        <input type ="text" name ="phoneNo" id="phoneNo"/>
+		<br>
+		<br>
+                   
+<!--       address-->
+        <label for="address">Enter your address:</label>
+        <input type ="text" name ="address" id="address"/>
+		<br>
+		<br>
+                   
+        <br>
+<!--       Image button-->
+        <label for="picture">Image:&emsp;&emsp;</label>
+        <input type="file" name="picture" id="image" required/>
+     
+        <br>
+		<br>         
+<!--Radio Button-->    
+        <input type="radio" id="terms" name="terms" value="HTML" required>
+        <label for="html">Check to agree to terms and conditions</label><br>
+        
+        <br>
+        <input type="submit" name="submit" value="Submit"/>
+                </div>
+			</div>
+			
+        </form>
+   </body>
+</html>
